@@ -2,8 +2,9 @@
   "name": "w-helpers",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "rm -rf ./dist && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "leexiang59@163.com",
@@ -11,5 +12,13 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:leexiang59/lerna-pro.git"
+  },
+  "dependencies": {
+    "lodash": "4.17.20"
+  },
+  "devDependencies": {
+    "rollup-plugin-json": "4.0.0",
+    "rollup-plugin-typescript2": "0.27.2",
+    "typescript": "4.0.2"
   }
 }
