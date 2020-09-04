@@ -8,11 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "leexiang59@163.com",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:leexiang59/lerna-pro.git"
-  },
+  "license": "MIT",
   "dependencies": {
     "lodash": "4.17.20"
   },
@@ -21,5 +17,8 @@
     "rollup-plugin-typescript2": "0.27.2",
     "typescript": "4.0.2"
   },
-  "gitHead": "59090c50a73bfca3c45632c7fbd815bfc1629b04"
+  "publishConfig": {
+    "registry": "https://github.com/leexiang59/lerna-pro.git"
+  },
+  "gitHead": "0f9ccadcf5fa2caea275875d5b20a28271eb4377"
 }
