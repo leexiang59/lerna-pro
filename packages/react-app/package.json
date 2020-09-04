@@ -1,6 +1,6 @@
 {
   "name": "react-app",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": true,
   "homepage": "/react-app",
   "proxy": "http://47.112.167.250:9002/",
@@ -17,7 +17,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "w-helpers": "^1.0.6"
+    "w-helpers": "^1.0.7"
   },
   "eslintConfig": {
     "extends": "react-app"
