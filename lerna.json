@@ -1,4 +1,11 @@
 {
   "version": "independent",
-  "packages": ["packages/*"]
+  "packages": ["packages/*"],
+  "command": {
+    "publish": {
+      "ignoreChanges": ["*.md"],
+      "message": "chore(release): lerna publish",
+      "registry": "https://github.com/leexiang59/lerna-pro.git"
+    }
+  }
 }

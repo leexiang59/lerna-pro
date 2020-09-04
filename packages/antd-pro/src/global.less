@@ -1,0 +1,120 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.lk-details {
+  .ant-drawer-title {
+    font-size: 18px;
+  }
+  .lk-details-title-2 {
+    font-size: 14px;
+  }
+  .ant-descriptions-title {
+    position: relative;
+    overflow: initial;
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: -10px;
+      display: block;
+      width: 5px;
+      height: 19px;
+      background: #1890ff;
+      content: '';
+    }
+  }
+  .ant-descriptions-item-label {
+    width: 134px;
+    padding-right: 10px;
+  }
+  .ant-descriptions-item-content {
+    padding-right: 10px;
+  }
+  .ant-descriptions-item {
+    &:nth-of-type(2) {
+      .ant-descriptions-item-content {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.lk-table-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.ant-pro-sider-logo {
+  img {
+    display: none;
+  }
+}
+
+.lk-details-table {
+  .ant-pro-table-search {
+    margin: 0 0 -10px;
+    padding: 0;
+    .ant-row {
+      justify-content: flex-end;
+      .ant-col {
+        flex: initial;
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
