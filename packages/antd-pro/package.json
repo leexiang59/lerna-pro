@@ -1,6 +1,6 @@
 {
   "name": "ant-design-pro",
-  "version": "4.2.10",
+  "version": "4.2.11",
   "private": true,
   "description": "An out-of-box UI solution for enterprise applications",
   "scripts": {
@@ -65,7 +65,7 @@
     "umi": "^3.2.14",
     "umi-request": "^1.0.8",
     "use-merge-value": "^1.0.1",
-    "w-helpers": "^1.0.8"
+    "w-helpers": "^1.0.9"
   },
   "devDependencies": {
     "@ant-design/pro-cli": "^1.0.18",
