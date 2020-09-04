@@ -20,5 +20,6 @@
     "rollup-plugin-json": "4.0.0",
     "rollup-plugin-typescript2": "0.27.2",
     "typescript": "4.0.2"
-  }
+  },
+  "gitHead": "3546e02893b78814679cf43ce14c05b3d11968ee"
 }
