@@ -1,15 +1,12 @@
 {
-  "name": "w-utils",
+  "name": "w-helpers",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": {
-    "name": "leexiang59",
-    "email": "leexiang59@163.com"
-  },
+  "author": "leexiang59@163.com",
   "license": "ISC",
   "repository": {
     "type": "git",
