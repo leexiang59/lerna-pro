@@ -2,18 +2,19 @@
   "name": "w-helpers",
   "version": "1.0.14",
   "description": "",
+  "author": "leexiang59",
+  "license": "ISC",
   "main": "dist/index.js",
   "scripts": {
-    "start": "rollup -w",
+    "start": "rollup -c -w",
     "build": "rm -rf ./dist && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "leexiang59",
-  "license": "MIT",
   "dependencies": {
     "lodash": "4.17.20"
   },
   "devDependencies": {
+    "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-json": "4.0.0",
     "rollup-plugin-typescript2": "0.27.2",
     "typescript": "4.0.2"
