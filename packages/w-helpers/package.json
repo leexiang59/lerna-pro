@@ -17,8 +17,5 @@
     "rollup-plugin-typescript2": "0.27.2",
     "typescript": "4.0.2"
   },
-  "publishConfig": {
-    "registry": "https://github.com/leexiang59/lerna-pro.git"
-  },
-  "gitHead": "2826c1dc9381b867a8b75aa91ecae08a97b98690"
+  "gitHead": "a1ea86116e452fa9259a870725f0e7c1d0c29e62"
 }
