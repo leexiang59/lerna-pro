@@ -3,8 +3,8 @@
  * @Author: will
  * @Date: 2020-09-05 15:59:56
  * @LastEditors: will
- * @LastEditTime: 2020-09-05 16:44:54
+ * @LastEditTime: 2020-09-05 17:10:14
  */
 export default () => {
-  return { a: 1, b: 2 };
+  return { a: 1, b: 2, c: 3 };
 };
