@@ -3,7 +3,7 @@
  * @Author: will
  * @Date: 2020-09-05 15:41:59
  * @LastEditors: will
- * @LastEditTime: 2020-09-05 17:05:06
+ * @LastEditTime: 2020-09-06 14:53:00
  */
 import React from "react";
 import logo from "./logo.svg";
@@ -12,7 +12,7 @@ import wUpload from "w-upload";
 import "./App.css";
 
 function App() {
-  console.log("w-helpers", getCookie());
+  console.log("w-helpers", getCookie);
   console.log("w-upload", wUpload);
   return (
     <div className="App">

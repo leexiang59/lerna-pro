@@ -3,7 +3,7 @@
  * @Author: will
  * @Date: 2020-09-04 20:50:49
  * @LastEditors: will
- * @LastEditTime: 2020-09-04 21:55:40
+ * @LastEditTime: 2020-09-06 14:44:03
  */
 
 export default (name: string, value: string, days: number = 30) => {
