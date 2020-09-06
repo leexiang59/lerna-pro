@@ -3,7 +3,7 @@
   "version": "1.0.17",
   "description": "",
   "author": "leexiang59",
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "start": "rollup -c -w",
