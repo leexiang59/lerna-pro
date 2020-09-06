@@ -3,19 +3,25 @@
  * @Author: will
  * @Date: 2020-09-05 15:41:59
  * @LastEditors: will
- * @LastEditTime: 2020-09-06 14:53:00
+ * @LastEditTime: 2020-09-06 15:58:02
  */
 import React from "react";
 import logo from "./logo.svg";
-import { getCookie } from "w-helpers";
-import wUpload from "w-upload";
+import { setCookie, getCookie, clearCookie } from "w-helpers";
 import "./App.css";
 
 function App() {
-  console.log("w-helpers", getCookie);
-  console.log("w-upload", wUpload);
+  setCookie("name", "will");
+  console.log(getCookie("name"));
   return (
     <div className="App">
+      <button
+        onClick={() => {
+          clearCookie("name");
+        }}
+      >
+        清除cookie
+      </button>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
