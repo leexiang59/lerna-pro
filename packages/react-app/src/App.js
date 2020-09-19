@@ -2,19 +2,23 @@
  * @Description:
  * @Author: will
  * @Date: 2020-09-05 15:41:59
- * @LastEditors: will
- * @LastEditTime: 2020-09-06 15:58:02
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-09-19 15:46:11
  */
 import React from "react";
 import logo from "./logo.svg";
 import { setCookie, getCookie, clearCookie } from "w-helpers";
+import { Input } from "antd";
+import { WUpload } from "w-components-react";
+// import "w-components-react/lib/index.css";
+import "antd/dist/antd.css";
 import "./App.css";
 
 function App() {
-  setCookie("name", "will");
-  console.log(getCookie("name"));
   return (
     <div className="App">
+      <Input />
+      <WUpload />
       <button
         onClick={() => {
           clearCookie("name");

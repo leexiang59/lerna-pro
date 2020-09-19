@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "dev:react": "lerna run start --scope react-app",
     "publish": "lerna publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
