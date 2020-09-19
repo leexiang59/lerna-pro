@@ -3,11 +3,11 @@
  * @Author: will
  * @Date: 2020-09-05 15:41:59
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-09-19 15:46:11
+ * @LastEditTime: 2020-09-19 15:54:07
  */
 import React from "react";
 import logo from "./logo.svg";
-import { setCookie, getCookie, clearCookie } from "w-helpers";
+import { clearCookie } from "w-helpers";
 import { Input } from "antd";
 import { WUpload } from "w-components-react";
 // import "w-components-react/lib/index.css";
