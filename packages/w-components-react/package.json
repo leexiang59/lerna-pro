@@ -47,6 +47,8 @@
     "react-dom": "^16.13.1"
   },
   "dependencies": {
-    "less": "3.12.2"
+    "@egoist/react-to-vue": "1.1.1",
+    "less": "3.12.2",
+    "vue": "^2.6.12"
   }
 }

@@ -1,17 +1,19 @@
-<!--
- * @Description: 
- * @Author: will
- * @Date: 2020-09-19 16:24:50
--->
 <template>
-  <div id="reactDom"></div>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="app">
+    <div id="reactDom"></div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <button @click="handleRender">渲染</button>
+    <button @click="handleDestory">销毁</button>
+    <button @click="handleChange">修改</button>
+    <div id="vueDom"></div>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+  </div>
 </template>
 
 <script>
+import Vue from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
-import { WUpload, reactRender } from "w-components-react";
+import { reactMount, reactUnMount, WUpload } from "w-components-react";
 import "w-components-react/lib/index.css";
 
 export default {
@@ -19,12 +21,47 @@ export default {
   components: {
     HelloWorld
   },
-  mounted() {
-    const target = document.getElementById("reactDom");
-    reactRender(WUpload(), target);
-    // console.log(1, target);
+  data() {
+    return {
+      target: null,
+      reactData: { times: 1 }
+    };
+  },
+  watch: {
+    "reactData.times": function() {
+      this.handleRender();
+    }
+  },
+  methods: {
+    // 渲染react组件
+    handleRender() {
+      reactMount(WUpload(this.reactData), this.target);
+    },
 
-    // render(<h1>23</h1>, target);
+    // 修改组件状态、重新渲染
+    handleChange() {
+      this.reactData.times += 1;
+      // this.handleRender();
+    },
+
+    // 销毁react组件
+    handleDestory() {
+      reactUnMount(this.target);
+      this.reactData = null;
+    }
+  },
+  mounted() {
+    // 渲染react组件，方法一
+    this.target = document.getElementById("reactDom");
+    this.handleRender();
+
+    // 渲染react组件，方法二
+    // VueWUpload({
+    //   props
+    // }).$mount("#vueDom");
+  },
+  destroyed() {
+    this.handleDestory();
   }
 };
 </script>
